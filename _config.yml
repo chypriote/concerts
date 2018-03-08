@@ -31,7 +31,6 @@ defaults:
 markdown: kramdown
 theme: phantom_jekyll_theme
 plugins:
-  - jekyll-feed
   - jektify
 sass:
   style: compact
