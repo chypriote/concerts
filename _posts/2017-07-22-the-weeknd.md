@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "The Weeknd"
 date:   2017-07-22 22:00:00 -0400
 categories: concert

@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Concerts
+email: nicolastemeni@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -23,12 +23,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chypriote
 github_username:  chypriote
+timezone: Europe/Paris
+defaults:
+  lang: fr
 
 # Build settings
 markdown: kramdown
 theme: phantom_jekyll_theme
 plugins:
   - jekyll-feed
+  - jektify
 sass:
   style: compact
 
@@ -45,3 +49,21 @@ font-awesome-icon-logo: music
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+jektify:
+  enable: true
+  open: true
+  toggle:
+    enable: false  
+  spotify:
+    user: 111577883
+  sass:
+    jekyll: true
+    other:
+      dir: "_sass"   
+  title:
+    enable: false
+    text: "Jektify"
+  description:
+    enable: false
+    text: |

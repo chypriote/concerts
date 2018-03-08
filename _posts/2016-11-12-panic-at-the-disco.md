@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Panic! at the Disco"
 date:   2016-11-12 20:00:00 -0400
 categories: concert

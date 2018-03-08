@@ -1,25 +1,25 @@
 <section class="tiles">
 
-{% for post in site.posts limit:site.front-page-posts %}
-	<article class="style{{ forloop.index |modulo:6|plus:1 }}">
-		<span class="image">
-				{% if post.image %}
-					<img src="{{ "/assets/images/"| append: post.image }}" />
-				{% else %}
-					<img src="https://jekyllrb.com/img/logo-2x.png" alt="{{ post.title }}" />
-				{% endif %}
-		</span>
-		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
-			<h2>{{ post.title }}</h2>
-			<div class="content">
-				{% if post.location %}
-					<p>{{ post.location }}</p>
-				{% else %}
-					<p>{{ post.excerpt }}</p>
-				{% endif %}
-			</div>
-		</a>
-	</article>
-{% endfor %}
+	{% for post in site.posts limit:site.front-page-posts %}
+		<article class="style{{ forloop.index |modulo:6|plus:1 }}">
+			<span class="image">
+					{% if post.image %}
+						<img src="{{ "/assets/images/"| append: post.image }}" />
+					{% else %}
+						<img src="https://jekyllrb.com/img/logo-2x.png" alt="{{ post.title }}" />
+					{% endif %}
+			</span>
+			<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
+				<h2>{{ post.title }}</h2>
+				<div class="content">
+					{% if post.location %}
+						<p>{{ post.location }}</p>
+					{% else %}
+						<p>{{ post.excerpt }}</p>
+					{% endif %}
+				</div>
+			</a>
+		</article>
+	{% endfor %}
 
 </section>

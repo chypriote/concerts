@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Sonata Arctica"
 date:   2016-10-16 20:00:00 -0400
 categories: concert

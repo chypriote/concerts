@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post
 title:  "Imagine Dragons"
-date:   2018-02-22 12:00:00 +0200
+date:   2018-02-22
 categories: concert
 location: AccorHotels Arena
 image: imaginedragons2018.jpg
+playlist: 111577883/playlist/61uj8FRqpP97YjYpI8koi1/dark
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.
