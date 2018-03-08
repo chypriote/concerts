@@ -7,7 +7,7 @@
 /* Menu */
 
 	#wrapper {
-		@include vendor('transition', 'opacity #{_duration(menu)} ease');
+		transition: opacity 0.45s ease;
 		opacity: 1;
 	}
 
