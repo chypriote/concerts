@@ -1,8 +1,8 @@
-<section class="tiles">
+<section class="tiles upcoming">
 
-	{% for post in site.posts limit:site.front-page-posts %}
+	{% for post in site.categories.upcoming reversed limit:site.front-page-posts %}
 		<article class="style{{ forloop.index |modulo:6|plus:1 }}">
-			<span class="image">
+			<span class="background-image">
 					{% if post.image %}
 						<img src="{{ "/assets/images/"| append: post.image }}" />
 					{% else %}

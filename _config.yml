@@ -26,6 +26,7 @@ github_username:  chypriote
 timezone: Europe/Paris
 defaults:
   lang: fr
+future: true
 
 # Build settings
 markdown: kramdown

@@ -27,39 +27,40 @@
 		visibility: hidden;
 		z-index: _misc(z-index-base) + 2;
 
-		> .inner {
-			@include vendor('transition', 'opacity #{_duration(menu)} ease');
+		.inner {
+			transition: opacity 0.45s ease;
 			-webkit-overflow-scrolling: touch;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
 			height: 100%;
 			padding: 2.75em;
 			opacity: 0;
 			overflow-y: auto;
 
-			> ul {
+			h2 {text-align: right;}
+			ul {
 				list-style: none;
-				margin: 0 0 (_size(element-margin) * 0.5) 0;
+				margin: 0;
 				padding: 0;
 
-				> li {
+				li {
 					padding: 0;
-					border-top: solid 1px transparentize(_palette(bg), 0.85);
+					text-align: right;
+
+
+					&.year {
+						font-weight: bold;
+						border-bottom: solid 1px transparentize(_palette(bg), 0.85);
+						text-align: left;
+					}
 
 					a {
 						display: block;
-						padding: 1em 0;
-						line-height: 1.5;
+						padding: .5em 0;
+						line-height: 1;
 						border: 0;
 						color: inherit;
+						&:hover {color: #f2849e;}
 					}
 
-					&:first-child {
-						border-top: 0;
-						margin-top: -1em;
-					}
 				}
 			}
 		}
