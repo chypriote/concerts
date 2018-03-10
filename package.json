@@ -1,0 +1,43 @@
+{
+  "name": "concerts",
+  "version": "1.0.0",
+  "description": "Historique de mes concerts",
+  "main": "index.html",
+  "dependencies": {
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chypriote/concerts.git"
+  },
+  "keywords": [
+    "chypriote",
+    "concerts"
+  ],
+  "author": "ChypRiotE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chypriote/concerts/issues"
+  },
+  "homepage": "https://github.com/chypriote/concerts#readme"
+}
