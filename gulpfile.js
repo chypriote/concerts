@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var g = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var cp = require('child_process');
+var clean = require('del');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
