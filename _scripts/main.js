@@ -48,7 +48,6 @@ $(function() {
 				event.preventDefault();
 				event.stopPropagation();
 				$menu._hide();
-				console.log('test', $(event.currentTarget));
 				window.setTimeout(() => {window.location.href = href;}, 350);
 			});
 

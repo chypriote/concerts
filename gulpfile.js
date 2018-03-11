@@ -33,8 +33,8 @@ gulp.task('scripts', function(){
 		.pipe(g.babel({
 			presets: ['env']
 		}))
-		// .pipe(g.rename({suffix: '.min'}))
-		// .pipe(g.uglify())
+		.pipe(g.rename({suffix: '.min'}))
+		.pipe(g.uglify())
 		.pipe(gulp.dest('assets/js'))
 		.pipe(browserSync.reload({stream:true}));
 });
