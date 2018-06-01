@@ -2,8 +2,8 @@
 layout: post
 title: Arctic Monkeys
 date: 2018-05-29
-categories: upcoming
+categories: concert
 location: Zenith Paris
 image: arcticmonkeys2018.jpg
-playlist: 111577883/artist/7Ln80lUS6He07XvHI8qqHH/dark
+playlist: 111577883/playlist/7CdPWfOG83NeU4iG7jxasc/dark
 ---
