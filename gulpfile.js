@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var cp = require('child_process');
 var clean = require('del');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'bundle';
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -12,7 +12,8 @@ var errorHandler = function (error) {console.log(error.message);this.emit('end')
 
 gulp.task('jekyll-build', ['images', 'sass', 'scripts'], function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn( jekyll , ['build'], {stdio: 'inherit'}).on('close', done);
+	// cp.exec('bundle exec jekyll build');
+	return cp.spawn( jekyll , ['exec', 'jekyll', 'build'], {stdio: 'inherit'}).on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
@@ -67,7 +68,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('_sass/*.scss', ['sass']);
+	gulp.watch('_sass/**/*.scss', ['sass']);
 	gulp.watch('_scripts/*.js', ['scripts']);
 	gulp.watch('_images/**/*', ['images']);
 	gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);

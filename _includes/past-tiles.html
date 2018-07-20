@@ -1,7 +1,7 @@
 <section class="tiles">
 
 	{% for post in site.categories.concert limit:site.front-page-posts %}
-		<article class="style{{ forloop.index |modulo:6|plus:1 }}">
+		<article> {% comment %} class="style{{ forloop.index |modulo:6|plus:1 }}" {% endcomment %}
 			<span class="background-image">
 					{% if post.image %}
 						<img src="{{ "/assets/images/"| append: post.image }}" />
