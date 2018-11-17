@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var cp = require('child_process');
 var clean = require('del');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'bundle';
+var jekyll   = process.platform === 'win32' ? 'bundle.bat' : 'bundle';
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };

@@ -2,8 +2,8 @@
 layout: post
 title: Nightwish
 date: 2018-11-10
-categories: upcoming
+categories: concert
 location: AccorHotels Arena
-image: nightwish.jpg
-playlist: 111577883/artist/2NPduAUeLVsfIauhRwuft1/dark
+image: nightwish2018.jpg
+playlist: 111577883/playlist/7q2LXQdQsR1OU04HoB8uxl/dark
 ---
