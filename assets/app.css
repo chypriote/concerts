@@ -1,0 +1,46 @@
+:root {
+	--navbar-height: 5rem;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+html {
+	font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	font-size: 16px;
+	word-spacing: 1px;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight: 900;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: .35em;
+	margin: 0;
+}
+h2 {
+	font-size: 1.1em;
+}
+p {
+	margin: 0;
+}
+a {
+	transition: border-bottom-color .2s ease,color .2s ease;
+	text-decoration: none;
+	color: #585858;
+	border-bottom: 1px dotted rgba(88,88,88,.5);
+	&:hover {
+		border-bottom-color: transparent;
+		color: #f2849e;
+	}
+}
