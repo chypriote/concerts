@@ -1,5 +1,6 @@
 export default {
 	target: 'static',
+	telemetry: false,
 	head: {
 		titleTemplate: (titleChunk) => `${titleChunk} - ConcertsV2`,
 		meta: [
@@ -12,11 +13,29 @@ export default {
 	css: ['normalize.css/normalize.css', '~/assets/app.css'],
 	plugins: [],
 	components: true,
-	buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
-	modules: ['@nuxtjs/pwa', '@nuxt/content'],
+	buildModules: [
+		'@nuxt/postcss8',
+		['@nuxtjs/eslint-module', { cache: true }],
+		// '@nuxtjs/stylelint-module'
+	],
+	modules: [
+		'@nuxtjs/pwa',
+		'@nuxt/content',
+		'@nuxtjs/component-cache'
+	],
 	content: {},
 	build: {
 		transpile: ['lodash-es'],
+		optimization: {
+			splitChunks: {
+				chunks: 'all',
+				automaticNameDelimiter: '.',
+				maxSize: 256000,
+			},
+		},
+		extend (config) {
+			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
+		},
 		postcss: {
 			plugins: {
 				'postcss-nested': {},
