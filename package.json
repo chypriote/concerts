@@ -29,7 +29,7 @@
     "core-js": "^3.24",
     "lodash-es": "^4.17",
     "normalize.css": "^8.0",
-    "nuxt": "^2.15"
+    "nuxt": "^3.4"
   },
   "devDependencies": {
     "@nuxt/postcss8": "^1.1",
