@@ -14,7 +14,6 @@ export default {
 	plugins: [],
 	components: true,
 	buildModules: [
-		'@nuxt/postcss8',
 		['@nuxtjs/eslint-module', { cache: true }],
 		// '@nuxtjs/stylelint-module'
 	],
@@ -37,9 +36,11 @@ export default {
 			config.resolve.alias.vue = 'vue/dist/vue.esm.js'
 		},
 		postcss: {
-			plugins: {
-				'postcss-nested': {},
-			},
+			postcssOptions: {
+				plugins: {
+					'postcss-nested': {},
+				},
+			}
 		},
 	},
 }
